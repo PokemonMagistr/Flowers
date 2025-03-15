@@ -1,0 +1,29 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Градиент -->
+    <defs>
+        <linearGradient id="flowerGradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#6A5ACD"/>  <!-- Фиолетовый -->
+            <stop offset="100%" stop-color="#40E0D0"/> <!-- Бирюзовый -->
+        </linearGradient>
+
+        <!-- Путь для текста -->
+        <path id="curve" d="M 50 50 A 50 30 0 1 1 150 50" fill="transparent"/>
+    </defs>
+
+    <!-- Стебель -->
+    <line x1="100" y1="150" x2="100" y2="60" stroke="#4CAF50" stroke-width="4"/>
+    
+    <!-- Листья -->
+    <ellipse cx="85" cy="100" rx="20" ry="10" fill="#4CAF50"/>
+    <ellipse cx="115" cy="80" rx="20" ry="10" fill="#4CAF50"/>
+    
+    <!-- Цветок с градиентом -->
+    <circle cx="100" cy="50" r="20" fill="url(#flowerGradient)"/>
+    
+    <!-- Текст полукругом -->
+    <text font-size="14" fill="#333" font-family="Arial, sans-serif">
+        <textPath href="#curve" startOffset="50%" text-anchor="middle">
+            Твоя Теплица
+        </textPath>
+    </text>
+</svg>
