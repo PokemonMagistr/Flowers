@@ -137,3 +137,28 @@ ul{
         max-width: 100%;
     }
 }
+
+@media (max-width: 768px) { 
+    .header .container {
+        flex-direction: column; /* Размещаем элементы друг под другом */
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .header__logo {
+        width: 70px; /* Делаем логотип меньше */
+        height: auto;
+    }
+
+    .header__nav {
+        margin-top: 10px;
+    }
+
+    .header__list {
+        gap: 20px; /* Уменьшаем расстояние между пунктами */
+    }
+
+    .header__list a {
+        font-size: 14px; /* Делаем шрифт меньше */
+    }
+}
