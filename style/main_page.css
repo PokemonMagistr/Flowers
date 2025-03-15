@@ -27,7 +27,7 @@ ul{
 
 .container{
     box-sizing: border-box;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     max-height: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -140,13 +140,13 @@ ul{
 
 @media (max-width: 768px) { 
     .header .container {
-        flex-direction: column; /* Размещаем элементы друг под другом */
+        flex-direction: row; /* Размещаем элементы друг под другом */
         align-items: center;
         padding: 10px 0;
     }
 
     .header__logo {
-        width: 70px; /* Делаем логотип меньше */
+        width: 60px; /* Делаем логотип меньше */
         height: auto;
     }
 
@@ -155,10 +155,10 @@ ul{
     }
 
     .header__list {
-        gap: 20px; /* Уменьшаем расстояние между пунктами */
+        gap: 15px; /* Уменьшаем расстояние между пунктами */
     }
 
     .header__list a {
-        font-size: 14px; /* Делаем шрифт меньше */
+        font-size: 12px; /* Делаем шрифт меньше */
     }
 }
